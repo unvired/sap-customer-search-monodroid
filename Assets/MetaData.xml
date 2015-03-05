@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application description="Unvired Sample SAP ERP" name="UNVIRED_SAMPLE_SAP_ERP" namespace="UNVIRED" package="com.unvired.sapsample" version="1.0">
+<InputEntity description="Customer Input" name="INPUT_CUSTOMER">
+<Field description="" isGid="false" length="4" mandatory="false" name="MAX_HITS" sqlType="INTEGER"/>
+<Field description="" isGid="false" length="10" mandatory="false" name="CUSTOMER_NUMBER" sqlType="TEXT"/>
+<Field description="Name (field NAME1) in upper case for matchcode" isGid="false" length="25" mandatory="false" name="MC_NAME" sqlType="TEXT"/>
+</InputEntity>
+<BusinessEntity description="" name="CUSTOMERS_RESULTS">
+<header className="com.unvired.sapsample.be.CUSTOMERS_RESULTS_HEADER" description="" name="CUSTOMERS_RESULTS_HEADER">
+<Field description="Addresses: Address type" isGid="false" length="1" mandatory="false" name="ADDR_TYPE" sqlType="TEXT"/>
+<Field description="Customer Number 1" isGid="true" length="10" mandatory="true" name="KUNNR" sqlType="TEXT"/>
+<Field description="Number of contact person" isGid="false" length="10" mandatory="false" name="PARNR" sqlType="INTEGER"/>
+<Field description="Name 1" isGid="false" length="40" mandatory="false" name="NAME" sqlType="TEXT"/>
+<Field description="First name" isGid="false" length="40" mandatory="false" name="FIRSTNAME" sqlType="TEXT"/>
+<Field description="Street" isGid="false" length="60" mandatory="false" name="STREET" sqlType="TEXT"/>
+<Field description="City" isGid="false" length="40" mandatory="false" name="CITY1" sqlType="TEXT"/>
+<Field description="Name (field NAME1) in upper case for matchcode" isGid="false" length="25" mandatory="false" name="MC_NAME" sqlType="TEXT"/>
+<Field description="First name in upper case for search help" isGid="false" length="25" mandatory="false" name="MC_FIRSTNAME" sqlType="TEXT"/>
+<Field description="Search Term 1" isGid="false" length="20" mandatory="false" name="SORT1" sqlType="TEXT"/>
+<Field description="Search Term 2" isGid="false" length="20" mandatory="false" name="SORT2" sqlType="TEXT"/>
+<Field description="City name in upper case for search help" isGid="false" length="25" mandatory="false" name="MC_CITY1" sqlType="TEXT"/>
+<Field description="City postal code" isGid="false" length="10" mandatory="false" name="POST_CODE1" sqlType="TEXT"/>
+<Field description="Street name in upper case for search help" isGid="false" length="25" mandatory="false" name="MC_STREET" sqlType="TEXT"/>
+<Field description="House Number" isGid="false" length="10" mandatory="false" name="HOUSE_NUM1" sqlType="TEXT"/>
+<Field description="Country Key" isGid="false" length="3" mandatory="false" name="COUNTRY" sqlType="TEXT"/>
+<Field description="Region (State, Province, County)" isGid="false" length="3" mandatory="false" name="REGION" sqlType="TEXT"/>
+<Field description="Last name" isGid="false" length="40" mandatory="false" name="NAME_L_LNG" sqlType="TEXT"/>
+<Field description="First name" isGid="false" length="40" mandatory="false" name="NAME_F_LNG" sqlType="TEXT"/>
+<Field description="City" isGid="false" length="40" mandatory="false" name="CITY1_LNG" sqlType="TEXT"/>
+<Field description="Street" isGid="false" length="60" mandatory="false" name="STREET_LNG" sqlType="TEXT"/>
+<Field description="PO Box postal code" isGid="false" length="10" mandatory="false" name="POST_CODE2" sqlType="TEXT"/>
+<Field description="PO Box" isGid="false" length="10" mandatory="false" name="PO_BOX" sqlType="TEXT"/>
+</header>
+</BusinessEntity>
+<BusinessEntity description="" name="MATERIAL">
+<header className="com.unvired.sapsample.be.MATERIAL_HEADER" description="" name="MATERIAL_HEADER">
+<Field description="" isGid="true" length="50" mandatory="true" name="MATERIAL_NO" sqlType="TEXT"/>
+<Field description="" isGid="false" length="200" mandatory="false" name="MATERIAL_DESC" sqlType="TEXT"/>
+<Field description="" isGid="false" length="12" mandatory="false" name="MATERIAL_TYPE" sqlType="TEXT"/>
+<Field description="" isGid="false" length="3" mandatory="false" name="DEFAULT_UOM" sqlType="TEXT"/>
+</header>
+</BusinessEntity>
+<InputEntity description="Input Material" name="INPUT_MATERIAL">
+<Field description="" isGid="false" length="50" mandatory="false" name="MATERIAL_NO" sqlType="TEXT"/>
+<Field description="" isGid="false" length="200" mandatory="false" name="MATERIAL_DESC" sqlType="TEXT"/>
+</InputEntity>
+</Application>

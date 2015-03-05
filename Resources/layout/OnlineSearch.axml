@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="65.7dp"
+        android:id="@+id/NameTextField"
+        android:hint="Name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="68.6dp"
+        android:id="@+id/NumberTextField"
+        android:hint="Number" />
+    <Button
+        android:text="Search Online"
+        android:layout_width="match_parent"
+        android:layout_height="52.8dp"
+        android:id="@+id/OnlineSearchButton"
+        android:layout_margin="30dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CustomersList"
+        android:scrollbars="horizontal" />
+</LinearLayout>

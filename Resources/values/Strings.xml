@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Hello">Hello World, Click Me!</string>
+  <string name="ApplicationName">AndroidProject</string>
+  <string name =" action_search">Search</string>
+  <string name =" action_settings">Search</string>  
+  <string name="DomainSpinner">Choose a Domain</string>
+  <string name = "library_name">Library</string>
+  <string-array name="domains">
+    <item>http</item>
+    <item>https</item>
+  </string-array>
+
+</resources>
